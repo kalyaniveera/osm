@@ -1,0 +1,663 @@
+<dataDictionary xsi:schemaLocation="http://www.metasolv.com/OMS/OrderModel/2002/06/25" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns="http://www.metasolv.com/OMS/OrderModel/2002/06/25"> 
+	<element name="Street"  xsi:type="textType">
+	
+		<description>Street</description>
+		
+		
+				<length>20</length>
+		
+	</element>
+	<element name="serviceId"  xsi:type="textType">
+	
+			<annotation>
+                <documentation>this is the service id for the line.
+Original Oi Attributes:
+- For a fixed service, it holds numFixed
+- For a mobile service, it holds numMobile</documentation>
+			</annotation>
+		<description>serviceId</description>
+		
+		
+				<length>50</length>
+		
+	</element>
+	<element name="serviceActioncode"  xsi:type="lookupType">
+	
+		<description>serviceActioncode</description>
+		
+		
+			<lookupEntry>
+				<code>ADD</code>
+				<description>ADD</description>
+			</lookupEntry>
+			<lookupEntry>
+				<code>DELETE</code>
+				<description>DELETE</description>
+			</lookupEntry>
+	</element>	
+	<element name="paymentMethod"  xsi:type="lookupType">
+	
+		<description>paymentMethod</description>
+		
+		
+			<lookupEntry>
+				<code>1</code>
+				<description>1</description>
+			</lookupEntry>
+			<lookupEntry>
+				<code>2</code>
+				<description>2</description>
+			</lookupEntry>
+	</element>	
+	<element name="bandwidth"  xsi:type="lookupType">
+	
+		<description>bandwidth</description>
+		
+		
+			<lookupEntry>
+				<code>2</code>
+				<description>2</description>
+			</lookupEntry>
+			<lookupEntry>
+				<code>3</code>
+				<description>3</description>
+			</lookupEntry>
+			<lookupEntry>
+				<code>5</code>
+				<description>5</description>
+			</lookupEntry>
+	</element>	
+	<element name="itemReference"  xsi:type="groupType">
+	
+		<description>itemReference</description>
+		
+	</element>	
+	<element name="state"  xsi:type="textType">
+	
+		<description>state</description>
+		
+		
+				<length>50</length>
+		
+	</element>
+	<element name="lineId"  xsi:type="textType">
+	
+			<annotation>
+                <documentation>this is the unique id for this order line within the order.  Indicates 
+					the ordering of line items in the sales order.
+					</documentation>
+			</annotation>
+		<description>lineId</description>
+		
+		
+				<length>50</length>
+		
+	</element>
+	<element name="numSalesOrder"  xsi:type="textType">
+	
+			<annotation>
+                <documentation>Unique identifier for the order.
+						Maps to the Order/numSalesOrder field in the OI spreadsheet
+					</documentation>
+			</annotation>
+		<description>numSalesOrder</description>
+		
+		
+				<length>20</length>
+		
+	</element>
+	<element name="number"  xsi:type="textType">
+	
+		<description>number</description>
+		
+		
+				<length>50</length>
+		
+	</element>
+	<element name="typeCode"  xsi:type="lookupType">
+	
+		<description>typeCode</description>
+		
+		
+			<lookupEntry>
+				<code>PRODUCT</code>
+				<description>PRODUCT</description>
+			</lookupEntry>
+			<lookupEntry>
+				<code>BUNDLE</code>
+				<description>BUNDLE</description>
+			</lookupEntry>
+			<lookupEntry>
+				<code>OFFER</code>
+				<description>OFFER</description>
+			</lookupEntry>
+	</element>	
+	<element name="serviceActionCode"  xsi:type="lookupType">
+	
+		<description>serviceActionCode</description>
+		
+		
+			<lookupEntry>
+				<code>Add</code>
+				<description>Add</description>
+			</lookupEntry>
+			<lookupEntry>
+				<code>Change</code>
+				<description>Change</description>
+			</lookupEntry>
+			<lookupEntry>
+				<code>Cancel</code>
+				<description>Cancel</description>
+			</lookupEntry>
+			<lookupEntry>
+				<code>Delete</code>
+				<description>Delete</description>
+			</lookupEntry>
+	</element>	
+	<element name="salesOrderLine"  xsi:type="groupType">
+	
+		<description>salesOrderLine</description>
+		
+	</element>	
+	<element name="typeAddress"  xsi:type="lookupType">
+	
+		<description>typeAddress</description>
+		
+		
+			<lookupEntry>
+				<code>Building</code>
+				<description>Building</description>
+			</lookupEntry>
+			<lookupEntry>
+				<code>House</code>
+				<description>House</description>
+			</lookupEntry>
+			<lookupEntry>
+				<code>Apartment</code>
+				<description>Apartment</description>
+			</lookupEntry>
+	</element>	
+	<element name="parentLineReference"  xsi:type="groupType">
+	
+			<annotation>
+                <documentation>this is the unique id for the direct parent of this line.
+					</documentation>
+			</annotation>
+		<description>parentLineReference</description>
+		
+	</element>	
+	<element name="dataTypeCode"  xsi:type="lookupType">
+	
+		<description>dataTypeCode</description>
+		
+		
+			<lookupEntry>
+				<code>Text</code>
+				<description>Text</description>
+			</lookupEntry>
+			<lookupEntry>
+				<code>Number</code>
+				<description>Number</description>
+			</lookupEntry>
+			<lookupEntry>
+				<code>Boolean</code>
+				<description>Boolean</description>
+			</lookupEntry>
+	</element>	
+	<element name="corporate"  xsi:type="textType">
+	
+		<description>corporate</description>
+		
+		
+				<length>20</length>
+		
+	</element>
+	<element name="customerAddress"  xsi:type="groupType">
+	
+		<description>customerAddress</description>
+		
+	</element>	
+	<element name="typeCompl"  xsi:type="textType">
+	
+		<description>typeCompl</description>
+		
+		
+				<length>50</length>
+		
+	</element>
+	<element name="clientSince"  xsi:type="dateType">
+	
+		<description>clientSince</description>
+		
+				
+	</element>
+	<element name="salesOrderLineGroup"  xsi:type="groupType">
+	
+		<description>salesOrderLineGroup</description>
+		
+	</element>	
+	<element name="PhoneNumber"  xsi:type="textType">
+	
+		<description>PhoneNumber</description>
+		
+		
+				<length>20</length>
+		
+	</element>
+	<element name="cpfClient"  xsi:type="textType">
+	
+		<description>cpfClient</description>
+		
+		
+				<length>20</length>
+		
+	</element>
+	<element name="requestedDeliveryDate"  xsi:type="dateTimeType">
+	
+			<annotation>
+                <documentation>Original Oi Attribute: dateCommitment</documentation>
+			</annotation>
+		<description>requestedDeliveryDate</description>
+		
+				
+	</element>
+	<element name="PostalCode"  xsi:type="textType">
+	
+		<description>PostalCode</description>
+		
+		
+				<length>20</length>
+		
+	</element>
+	<element name="empresaFaturamento"  xsi:type="lookupType">
+	
+		<description>empresaFaturamento</description>
+		
+		
+			<lookupEntry>
+				<code>Oi Fixed</code>
+				<description>Oi Fixed</description>
+			</lookupEntry>
+			<lookupEntry>
+				<code>Oi Mobile</code>
+				<description>Oi Mobile</description>
+			</lookupEntry>
+			<lookupEntry>
+				<code>Oi Velox</code>
+				<description>Oi Velox</description>
+			</lookupEntry>
+	</element>	
+	<element name="value"  xsi:type="textType">
+	
+		<description>value</description>
+		
+		
+				<length>50</length>
+		
+	</element>
+	<element name="cnpjClient"  xsi:type="textType">
+	
+		<description>cnpjClient</description>
+		
+		
+				<length>20</length>
+		
+	</element>
+	<element name="locationType"  xsi:type="lookupType">
+	
+		<description>locationType</description>
+		
+		
+			<lookupEntry>
+				<code>Street</code>
+				<description>Street</description>
+			</lookupEntry>
+			<lookupEntry>
+				<code>Avenue</code>
+				<description>Avenue</description>
+			</lookupEntry>
+			<lookupEntry>
+				<code>Square</code>
+				<description>Square</description>
+			</lookupEntry>
+	</element>	
+	<element name="nameLocation"  xsi:type="textType">
+	
+		<description>nameLocation</description>
+		
+		
+				<length>200</length>
+		
+	</element>
+	<element name="City"  xsi:type="textType">
+	
+		<description>City</description>
+		
+		
+				<length>20</length>
+		
+	</element>
+	<element name="segmentMarkets"  xsi:type="groupType">
+	
+		<description>segmentMarkets</description>
+		
+	</element>	
+	<element name="areaCode"  xsi:type="textType">
+	
+		<description>areaCode</description>
+		
+		
+				<length>50</length>
+		
+	</element>
+	<element name="hierarchyName"  xsi:type="textType">
+	
+		<description>hierarchyName</description>
+		
+		
+				<length>50</length>
+		
+	</element>
+	<element name="city"  xsi:type="textType">
+	
+		<description>city</description>
+		
+		
+				<length>50</length>
+		
+	</element>
+	<element name="rootParentLineId"  xsi:type="textType">
+	
+			<annotation>
+                <documentation>this is the unique id for the root parent of this line.
+					</documentation>
+			</annotation>
+		<description>rootParentLineId</description>
+		
+		
+				<length>50</length>
+		
+	</element>
+	<element name="status"  xsi:type="lookupType">
+	
+		<description>status</description>
+		
+		
+			<lookupEntry>
+				<code>New</code>
+				<description>New</description>
+			</lookupEntry>
+			<lookupEntry>
+				<code>Existing</code>
+				<description>Existing</description>
+			</lookupEntry>
+	</element>	
+	<element name="inscrState"  xsi:type="textType">
+	
+		<description>inscrState</description>
+		
+		
+				<length>20</length>
+		
+	</element>
+	<element name="Name"  xsi:type="textType">
+	
+		<description>Name</description>
+		
+		
+				<length>20</length>
+		
+	</element>
+	<element name="invoiceProfile"  xsi:type="groupType">
+	
+		<description>invoiceProfile</description>
+		
+	</element>	
+	<element name="billingCycle"  xsi:type="lookupType">
+	
+		<description>billingCycle</description>
+		
+		
+			<lookupEntry>
+				<code>Q11</code>
+				<description>Q11</description>
+			</lookupEntry>
+			<lookupEntry>
+				<code>S12</code>
+				<description>S12</description>
+			</lookupEntry>
+			<lookupEntry>
+				<code>U13</code>
+				<description>U13</description>
+			</lookupEntry>
+	</element>	
+	<element name="customerAccount"  xsi:type="groupType">
+	
+			<annotation>
+                <documentation>Contains customer information.
+						Maps to the Order/Customer Account field in the OI spreadsheet
+					</documentation>
+			</annotation>
+		<description>customerAccount</description>
+		
+	</element>	
+	<element name="specification"  xsi:type="groupType">
+	
+		<description>specification</description>
+		
+	</element>	
+	<element name="port"  xsi:type="textType">
+	
+		<description>port</description>
+		
+		
+				<length>20</length>
+		
+	</element>
+	<element name="primaryClassificationCode"  xsi:type="textType">
+	
+		<description>primaryClassificationCode</description>
+		
+		
+				<length>50</length>
+		
+	</element>
+	<element name="district"  xsi:type="textType">
+	
+		<description>district</description>
+		
+		
+				<length>50</length>
+		
+	</element>
+	<element name="order"  xsi:type="groupType">
+	
+		<description>order</description>
+		
+	</element>	
+	<element name="exemptionICMS"  xsi:type="booleanType">
+	
+		<description>exemptionICMS</description>
+		
+				
+	</element>
+	<element name="mediaType"  xsi:type="lookupType">
+	
+		<description>mediaType</description>
+		
+		
+			<lookupEntry>
+				<code>1</code>
+				<description>1</description>
+			</lookupEntry>
+			<lookupEntry>
+				<code>2</code>
+				<description>2</description>
+			</lookupEntry>
+			<lookupEntry>
+				<code>3</code>
+				<description>3</description>
+			</lookupEntry>
+	</element>	
+	<element name="serviceAddress"  xsi:type="groupType">
+	
+		<description>serviceAddress</description>
+		
+	</element>	
+	<element name="name"  xsi:type="textType">
+	
+		<description>name</description>
+		
+		
+				<length>50</length>
+		
+	</element>
+	<element name="referencePoint"  xsi:type="textType">
+	
+		<description>referencePoint</description>
+		
+		
+				<length>50</length>
+		
+	</element>
+	<element name="AsdlServiceDetails"  xsi:type="groupType">
+	
+		<description>AsdlServiceDetails</description>
+		
+	</element>	
+	<element name="typeOrder"  xsi:type="lookupType">
+	
+			<annotation>
+                <documentation>Indicates the type of order action.
+						Provides an enumeration with choices: Add, Change and Cancel.
+						Maps to the Order/typeOrder field in the spreadsheet.  </documentation>
+			</annotation>
+		<description>typeOrder</description>
+		
+		
+			<lookupEntry>
+				<code>Add</code>
+				<description>Add</description>
+			</lookupEntry>
+			<lookupEntry>
+				<code>Change</code>
+				<description>Change</description>
+			</lookupEntry>
+			<lookupEntry>
+				<code>Cancel</code>
+				<description>Cancel</description>
+			</lookupEntry>
+	</element>	
+	<element name="codeLocation"  xsi:type="textType">
+	
+		<description>codeLocation</description>
+		
+		
+				<length>50</length>
+		
+	</element>
+	<element name="SubscriberInfo"  xsi:type="groupType">
+	
+		<description>SubscriberInfo</description>
+		
+	</element>	
+	<element name="typeInvoice"  xsi:type="lookupType">
+	
+		<description>typeInvoice</description>
+		
+		
+			<lookupEntry>
+				<code>Summary</code>
+				<description>Summary</description>
+			</lookupEntry>
+			<lookupEntry>
+				<code>Detailed</code>
+				<description>Detailed</description>
+			</lookupEntry>
+	</element>	
+	<element name="promotionalSalesOrderLineReference"  xsi:type="textType">
+	
+			<annotation>
+                <documentation>this is the unique id for the root parent of this line.
+					</documentation>
+			</annotation>
+		<description>promotionalSalesOrderLineReference</description>
+		
+		
+				<length>50</length>
+		
+	</element>
+	<element name="DslOrder"  xsi:type="groupType">
+	
+		<description>DslOrder</description>
+		
+	</element>	
+	<element name="orderId"  xsi:type="textType">
+	
+		<description>orderId</description>
+		
+		
+				<length>20</length>
+		
+	</element>
+	<element name="Address"  xsi:type="groupType">
+	
+		<description>Address</description>
+		
+	</element>	
+	<element name="segmentMarket"  xsi:type="textType">
+	
+		<description>segmentMarket</description>
+		
+		
+				<length>20</length>
+		
+	</element>
+	<element name="numAccount"  xsi:type="textType">
+	
+		<description>numAccount</description>
+		
+		
+				<length>20</length>
+		
+	</element>
+	<element name="numCompl"  xsi:type="textType">
+	
+		<description>numCompl</description>
+		
+		
+				<length>50</length>
+		
+	</element>
+	<element name="parentLineId"  xsi:type="textType">
+	
+		<description>parentLineId</description>
+		
+		
+				<length>50</length>
+		
+	</element>
+	<element name="category"  xsi:type="lookupType">
+	
+		<description>category</description>
+		
+		
+			<lookupEntry>
+				<code>Residential</code>
+				<description>Residential</description>
+			</lookupEntry>
+			<lookupEntry>
+				<code>Corporate</code>
+				<description>Corporate</description>
+			</lookupEntry>
+	</element>	
+	<element name="specificationGroup"  xsi:type="groupType">
+	
+		<description>specificationGroup</description>
+		
+	</element>	
+     
+	<schemaFile>dataDictionary/OSM7BroadbandDSL/OSM7BroadbandDSL.xsd</schemaFile>
+</dataDictionary>

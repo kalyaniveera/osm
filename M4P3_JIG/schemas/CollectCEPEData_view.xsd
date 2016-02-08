@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+           xmlns:CollectCEPEData="urn:com:metasolv:oms:xmlapi:1"
+	
+           targetNamespace="urn:com:metasolv:oms:xmlapi:1"> 
+  
+    <xs:complexType name="CollectCEPEData">
+        <xs:sequence>
+        <xs:element name="CEConfigData">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="CEWANCard" type="xs:string"/>
+            <xs:element name="PECERouting" type="xs:string"/>
+            <xs:element name="CEManagementAddress" type="xs:string"/>
+            <xs:element name="CEHostName" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+        </xs:element>
+        <xs:element name="PEConfigData">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="PEWANCard" type="xs:string"/>
+            <xs:element name="SlotPort" type="xs:string"/>
+            <xs:element name="PEPortAddress" type="xs:string"/>
+            <xs:element name="PEHostName" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+        </xs:element>
+
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>

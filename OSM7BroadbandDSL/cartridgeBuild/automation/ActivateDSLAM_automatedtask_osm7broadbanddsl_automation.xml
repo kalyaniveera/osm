@@ -1,0 +1,21 @@
+<taskAutomator>
+	<pluginJndiName>ActivateDSLAM.ActivationLoopbackActivator</pluginJndiName>
+	<ejbName>ActivateDSLAM.ActivationLoopbackActivator</ejbName>
+	<className>oracle.communications.ordermanagement.automation.plugin.XQueryReceiver</className>
+	<runAs>%{DEFAULT_AUTOMATION_USER}</runAs>    
+	<receive xsi:type="am:InternalReceiver">
+		<mnemonic>ActivateDSLAM</mnemonic>
+ 		<executionModes>do</executionModes>
+	</receive>	
+	
+	<implement xsi:type="am:XqueryAutomator">
+		<am:script>
+			<am:file>/mnt/VBoxShare/completeTaskStatus.xqy</am:file>
+			<am:cache>
+				<am:maxSize>50</am:maxSize>
+				<am:timeout>15000</am:timeout>
+			</am:cache>
+		</am:script>
+		<am:updateOrder>false</am:updateOrder>
+	</implement>    			
+</taskAutomator>

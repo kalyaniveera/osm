@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+           xmlns:BroadbandDSLOrderCreation="urn:com:metasolv:oms:xmlapi:1"
+	
+           targetNamespace="urn:com:metasolv:oms:xmlapi:1"> 
+  
+    <xs:complexType name="BroadbandDSLOrderCreation">
+        <xs:sequence>
+        <xs:element name="DslOrder">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="orderId" type="xs:string"/>
+            <xs:element name="AsdlServiceDetails">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="port" type="xs:string"/>
+                <xs:element name="bandwidth" type="xs:string"/>
+              </xs:sequence>
+            </xs:complexType>
+            </xs:element>
+            <xs:element name="SubscriberInfo">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Address">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="City" type="xs:string"/>
+                    <xs:element name="PostalCode" type="xs:string"/>
+                    <xs:element name="Street" type="xs:string"/>
+                  </xs:sequence>
+                </xs:complexType>
+                </xs:element>
+                <xs:element name="PhoneNumber" type="xs:string"/>
+                <xs:element name="Name" type="xs:string"/>
+              </xs:sequence>
+            </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+        </xs:element>
+        <xs:element name="order">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="customerAccount">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="numAccount" type="xs:string"/>
+                <xs:element name="status" type="xs:string"/>
+                <xs:element name="corporate" type="xs:string"/>
+                <xs:element name="cpfClient" type="xs:string"/>
+                <xs:element name="cnpjClient" type="xs:string"/>
+                <xs:element name="inscrState" type="xs:string"/>
+                <xs:element name="clientSince" type="xs:date"/>
+                <xs:element name="segmentMarkets">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="segmentMarket" type="xs:string"/>
+                  </xs:sequence>
+                </xs:complexType>
+                </xs:element>
+                <xs:element name="category" type="xs:string"/>
+                <xs:element name="invoiceProfile">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="mediaType" type="xs:string"/>
+                    <xs:element name="typeInvoice" type="xs:string"/>
+                    <xs:element name="billingCycle" type="xs:string"/>
+                    <xs:element name="exemptionICMS" type="xs:boolean"/>
+                    <xs:element name="empresaFaturamento" type="xs:string"/>
+                    <xs:element name="paymentMethod" type="xs:string"/>
+                  </xs:sequence>
+                </xs:complexType>
+                </xs:element>
+                <xs:element name="customerAddress">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="locationType" type="xs:string"/>
+                    <xs:element name="nameLocation" type="xs:string"/>
+                    <xs:element name="number" type="xs:string"/>
+                    <xs:element name="typeCompl" type="xs:string"/>
+                    <xs:element name="numCompl" type="xs:string"/>
+                    <xs:element name="district" type="xs:string"/>
+                    <xs:element name="codeLocation" type="xs:string"/>
+                    <xs:element name="city" type="xs:string"/>
+                    <xs:element name="state" type="xs:string"/>
+                    <xs:element name="referencePoint" type="xs:string"/>
+                    <xs:element name="areaCode" type="xs:string"/>
+                    <xs:element name="typeAddress" type="xs:string"/>
+                  </xs:sequence>
+                </xs:complexType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+            </xs:element>
+            <xs:element name="numSalesOrder" type="xs:string"/>
+            <xs:element name="typeOrder" type="xs:string"/>
+            <xs:element name="salesOrderLineGroup">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="salesOrderLine">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="lineId" type="xs:string"/>
+                    <xs:element name="parentLineReference">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="parentLineId" type="xs:string"/>
+                        <xs:element name="hierarchyName" type="xs:string"/>
+                      </xs:sequence>
+                    </xs:complexType>
+                    </xs:element>
+                    <xs:element name="rootParentLineId" type="xs:string"/>
+                    <xs:element name="promotionalSalesOrderLineReference" type="xs:string"/>
+                    <xs:element name="serviceId" type="xs:string"/>
+                    <xs:element name="requestedDeliveryDate" type="xs:dateTime"/>
+                    <xs:element name="serviceActionCode" type="xs:string"/>
+                    <xs:element name="serviceAddress">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="locationType" type="xs:string"/>
+                        <xs:element name="nameLocation" type="xs:string"/>
+                        <xs:element name="number" type="xs:string"/>
+                        <xs:element name="typeCompl" type="xs:string"/>
+                        <xs:element name="numCompl" type="xs:string"/>
+                        <xs:element name="district" type="xs:string"/>
+                        <xs:element name="codeLocation" type="xs:string"/>
+                        <xs:element name="city" type="xs:string"/>
+                        <xs:element name="state" type="xs:string"/>
+                        <xs:element name="referencePoint" type="xs:string"/>
+                        <xs:element name="areaCode" type="xs:string"/>
+                        <xs:element name="typeAddress" type="xs:string"/>
+                      </xs:sequence>
+                    </xs:complexType>
+                    </xs:element>
+                    <xs:element name="itemReference">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="name" type="xs:string"/>
+                        <xs:element name="typeCode" type="xs:string"/>
+                        <xs:element name="primaryClassificationCode" type="xs:string"/>
+                        <xs:element name="specificationGroup">
+                        <xs:complexType>
+                          <xs:sequence>
+                            <xs:element name="specification">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="serviceActioncode" type="xs:string"/>
+                                <xs:element name="name" type="xs:string"/>
+                              </xs:sequence>
+                            </xs:complexType>
+                            </xs:element>
+                          </xs:sequence>
+                        </xs:complexType>
+                        </xs:element>
+                      </xs:sequence>
+                    </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+        </xs:element>
+
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>

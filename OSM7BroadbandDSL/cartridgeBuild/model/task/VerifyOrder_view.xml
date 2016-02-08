@@ -1,0 +1,503 @@
+<view name="VerifyOrder" xsi:schemaLocation="http://www.metasolv.com/OMS/OrderModel/2002/06/25" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.metasolv.com/OMS/OrderModel/2002/06/25">
+   <description>VerifyOrder</description>
+   <stylesheet/>
+   <printStylesheet/>
+	<viewNode element="DslOrder">
+	<editable>true</editable>  <minOccurs>0</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+	<viewNode element="orderId">
+	<editable>true</editable>  <minOccurs>1</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+<viewNode element="AsdlServiceDetails">
+	<editable>true</editable>  <minOccurs>0</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+	<viewNode element="port">
+	<editable>true</editable>  <minOccurs>1</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+<viewNode element="bandwidth">
+	<editable>true</editable>  <minOccurs>1</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+
+</viewNode>
+
+<viewNode element="SubscriberInfo">
+	<editable>true</editable>  <minOccurs>0</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+	<viewNode element="Address">
+	<editable>true</editable>  <minOccurs>0</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+	<viewNode element="City">
+	<editable>true</editable>  <minOccurs>0</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+<viewNode element="PostalCode">
+	<editable>true</editable>  <minOccurs>0</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+<viewNode element="Street">
+	<editable>true</editable>  <minOccurs>0</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+
+</viewNode>
+
+<viewNode element="PhoneNumber">
+	<editable>true</editable>  <minOccurs>0</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+<viewNode element="Name">
+	<editable>true</editable>  <minOccurs>0</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+
+</viewNode>
+
+
+</viewNode>
+
+
+	<viewNode element="order">
+	<editable>true</editable>  <minOccurs>0</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+	<viewNode element="numSalesOrder">
+	<editable>true</editable>  <minOccurs>1</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+<viewNode element="typeOrder">
+	<editable>true</editable>  <minOccurs>1</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+<viewNode element="customerAccount">
+	<editable>true</editable>  <minOccurs>1</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+	<viewNode element="numAccount">
+	<editable>true</editable>  <minOccurs>1</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+<viewNode element="status">
+	<editable>true</editable>  <minOccurs>1</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+<viewNode element="corporate">
+	<editable>true</editable>  <minOccurs>0</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+<viewNode element="cpfClient">
+	<editable>true</editable>  <minOccurs>0</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+<viewNode element="cnpjClient">
+	<editable>true</editable>  <minOccurs>0</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+<viewNode element="inscrState">
+	<editable>true</editable>  <minOccurs>0</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+<viewNode element="clientSince">
+	<editable>true</editable>  <minOccurs>0</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+<viewNode element="segmentMarkets">
+	<editable>true</editable>  <minOccurs>0</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+	<viewNode element="segmentMarket">
+	<editable>true</editable>  <minOccurs>0</minOccurs>
+    <maxOccurs>999999999</maxOccurs>
+	
+</viewNode>
+
+
+</viewNode>
+
+<viewNode element="category">
+	<editable>true</editable>  <minOccurs>0</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+<viewNode element="invoiceProfile">
+	<editable>true</editable>  <minOccurs>0</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+	<viewNode element="mediaType">
+	<editable>true</editable>  <minOccurs>1</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+<viewNode element="typeInvoice">
+	<editable>true</editable>  <minOccurs>1</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+<viewNode element="billingCycle">
+	<editable>true</editable>  <minOccurs>1</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+<viewNode element="exemptionICMS">
+	<editable>true</editable>  <minOccurs>1</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+<viewNode element="empresaFaturamento">
+	<editable>true</editable>  <minOccurs>1</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+<viewNode element="paymentMethod">
+	<editable>true</editable>  <minOccurs>1</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+
+</viewNode>
+
+<viewNode element="customerAddress">
+	<editable>true</editable>  <minOccurs>1</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+	<viewNode element="locationType">
+	<editable>true</editable>  <minOccurs>1</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+<viewNode element="nameLocation">
+	<editable>true</editable>  <minOccurs>1</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+<viewNode element="number">
+	<editable>true</editable>  <minOccurs>0</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+<viewNode element="typeCompl">
+	<editable>true</editable>  <minOccurs>0</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+<viewNode element="numCompl">
+	<editable>true</editable>  <minOccurs>0</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+<viewNode element="district">
+	<editable>true</editable>  <minOccurs>0</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+<viewNode element="codeLocation">
+	<editable>true</editable>  <minOccurs>0</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+<viewNode element="city">
+	<editable>true</editable>  <minOccurs>0</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+<viewNode element="state">
+	<editable>true</editable>  <minOccurs>0</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+<viewNode element="referencePoint">
+	<editable>true</editable>  <minOccurs>0</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+<viewNode element="areaCode">
+	<editable>true</editable>  <minOccurs>0</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+<viewNode element="typeAddress">
+	<editable>true</editable>  <minOccurs>0</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+
+</viewNode>
+
+
+</viewNode>
+
+<viewNode element="salesOrderLineGroup">
+	<editable>true</editable>  <minOccurs>1</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+	<viewNode element="salesOrderLine">
+	<editable>true</editable>  <minOccurs>1</minOccurs>
+    <maxOccurs>999999999</maxOccurs>
+	
+	<viewNode element="lineId">
+	<editable>true</editable>  <minOccurs>1</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+<viewNode element="parentLineReference">
+	<editable>true</editable>  <minOccurs>0</minOccurs>
+    <maxOccurs>999999999</maxOccurs>
+	
+	<viewNode element="parentLineId">
+	<editable>true</editable>  <minOccurs>1</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+<viewNode element="hierarchyName">
+	<editable>true</editable>  <minOccurs>1</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+
+</viewNode>
+
+<viewNode element="rootParentLineId">
+	<editable>true</editable>  <minOccurs>0</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+<viewNode element="promotionalSalesOrderLineReference">
+	<editable>true</editable>  <minOccurs>0</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+<viewNode element="serviceId">
+	<editable>true</editable>  <minOccurs>0</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+<viewNode element="requestedDeliveryDate">
+	<editable>true</editable>  <minOccurs>1</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+<viewNode element="serviceActionCode">
+	<editable>true</editable>  <minOccurs>1</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+<viewNode element="serviceAddress">
+	<editable>true</editable>  <minOccurs>0</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+	<viewNode element="locationType">
+	<editable>true</editable>  <minOccurs>1</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+<viewNode element="nameLocation">
+	<editable>true</editable>  <minOccurs>1</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+<viewNode element="number">
+	<editable>true</editable>  <minOccurs>0</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+<viewNode element="typeCompl">
+	<editable>true</editable>  <minOccurs>0</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+<viewNode element="numCompl">
+	<editable>true</editable>  <minOccurs>0</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+<viewNode element="district">
+	<editable>true</editable>  <minOccurs>0</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+<viewNode element="codeLocation">
+	<editable>true</editable>  <minOccurs>0</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+<viewNode element="city">
+	<editable>true</editable>  <minOccurs>0</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+<viewNode element="state">
+	<editable>true</editable>  <minOccurs>0</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+<viewNode element="referencePoint">
+	<editable>true</editable>  <minOccurs>0</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+<viewNode element="areaCode">
+	<editable>true</editable>  <minOccurs>0</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+<viewNode element="typeAddress">
+	<editable>true</editable>  <minOccurs>0</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+
+</viewNode>
+
+<viewNode element="itemReference">
+	<editable>true</editable>  <minOccurs>1</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+	<viewNode element="name">
+	<editable>true</editable>  <minOccurs>1</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+<viewNode element="typeCode">
+	<editable>true</editable>  <minOccurs>1</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+<viewNode element="primaryClassificationCode">
+	<editable>true</editable>  <minOccurs>0</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+<viewNode element="specificationGroup">
+	<editable>true</editable>  <minOccurs>1</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+	<viewNode element="specification">
+	<editable>true</editable>  <minOccurs>0</minOccurs>
+    <maxOccurs>999999999</maxOccurs>
+	
+	<viewNode element="serviceActioncode">
+	<editable>true</editable>  <minOccurs>1</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+<viewNode element="name">
+	<editable>true</editable>  <minOccurs>1</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+<viewNode element="dataTypeCode">
+	<editable>true</editable>  <minOccurs>1</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+<viewNode element="value">
+	<editable>true</editable>  <minOccurs>1</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+
+</viewNode>
+
+
+</viewNode>
+
+
+</viewNode>
+
+
+</viewNode>
+
+
+</viewNode>
+
+
+</viewNode>
+
+
+</view>

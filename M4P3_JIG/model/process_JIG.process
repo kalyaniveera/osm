@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com:modelEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com="http://www.mslv.com/studio/core/model/common" xmlns:proc="http://xmlns.oracle.com/communications/sce/osm/model/process" xmlns="http://xmlns.oracle.com/communications/sce/osm/model/process" xmlns:prov="http://xmlns.oracle.com/communications/sce/osm/model/provisioning" xmlns:task="http://xmlns.oracle.com/communications/sce/osm/model/process/task" xsi:type="proc:processType" name="process_JIG" workstream="false">
+  <com:displayName>process_JIG</com:displayName>
+  <com:saveVersion>16</com:saveVersion>
+  <proc:orderType>
+    <com:entity>M4P3_JIGOrder</com:entity>
+    <com:entityType>order</com:entityType>
+    <com:relationship>orderRef</com:relationship>
+  </proc:orderType>
+  <proc:expectedDuration>P0Y0M0DT0H0M86400S</proc:expectedDuration>
+  <proc:startTask>Start1</proc:startTask>
+  <proc:activity id="Start1" name="Start">
+    <proc:processHistorySummary>true</proc:processHistorySummary>
+    <proc:diagramLocation>
+      <proc:Xcoordinate>538.4</proc:Xcoordinate>
+      <proc:Ycoordinate>-12.800009</proc:Ycoordinate>
+    </proc:diagramLocation>
+  </proc:activity>
+  <proc:activity xsi:type="proc:taskRef" id="Task1" name="CreateVPNSite">
+    <proc:processHistorySummary>true</proc:processHistorySummary>
+    <proc:diagramLocation>
+      <proc:Xcoordinate>-0.20002747</proc:Xcoordinate>
+      <proc:Ycoordinate>82.59999</proc:Ycoordinate>
+    </proc:diagramLocation>
+    <proc:task>
+      <com:entity>CreateVPNSite</com:entity>
+      <com:entityType>manualTask</com:entityType>
+      <com:relationship>taskRef</com:relationship>
+    </proc:task>
+  </proc:activity>
+  <proc:activity xsi:type="proc:taskRef" id="Task2" name="CollectCEPEData">
+    <proc:processHistorySummary>true</proc:processHistorySummary>
+    <proc:diagramLocation>
+      <proc:Xcoordinate>264.6</proc:Xcoordinate>
+      <proc:Ycoordinate>108.99999</proc:Ycoordinate>
+    </proc:diagramLocation>
+    <proc:task>
+      <com:entity>CollectCEPEData</com:entity>
+      <com:entityType>manualTask</com:entityType>
+      <com:relationship>taskRef</com:relationship>
+    </proc:task>
+  </proc:activity>
+  <proc:activity xsi:type="proc:taskRef" id="Task3" name="CollectLANData">
+    <proc:processHistorySummary>true</proc:processHistorySummary>
+    <proc:diagramLocation>
+      <proc:Xcoordinate>508.59998</proc:Xcoordinate>
+      <proc:Ycoordinate>172.6</proc:Ycoordinate>
+    </proc:diagramLocation>
+    <proc:task>
+      <com:entity>CollectLANData</com:entity>
+      <com:entityType>manualTask</com:entityType>
+      <com:relationship>taskRef</com:relationship>
+    </proc:task>
+  </proc:activity>
+  <proc:activity xsi:type="proc:taskRef" id="Task4" name="SubmittoActivation">
+    <proc:processHistorySummary>true</proc:processHistorySummary>
+    <proc:diagramLocation>
+      <proc:Xcoordinate>507.80002</proc:Xcoordinate>
+      <proc:Ycoordinate>304.40002</proc:Ycoordinate>
+    </proc:diagramLocation>
+    <proc:task>
+      <com:entity>SubmittoActivation</com:entity>
+      <com:entityType>manualTask</com:entityType>
+      <com:relationship>taskRef</com:relationship>
+    </proc:task>
+  </proc:activity>
+  <proc:activity xsi:type="proc:taskRef" id="Task5" name="UpdateBilling">
+    <proc:processHistorySummary>true</proc:processHistorySummary>
+    <proc:diagramLocation>
+      <proc:Xcoordinate>507.99997</proc:Xcoordinate>
+      <proc:Ycoordinate>428.80002</proc:Ycoordinate>
+    </proc:diagramLocation>
+    <proc:task>
+      <com:entity>UpdateBilling</com:entity>
+      <com:entityType>manualTask</com:entityType>
+      <com:relationship>taskRef</com:relationship>
+    </proc:task>
+  </proc:activity>
+  <proc:activity xsi:type="proc:taskRef" id="Task6" name="CollectCoSData">
+    <proc:processHistorySummary>true</proc:processHistorySummary>
+    <proc:diagramLocation>
+      <proc:Xcoordinate>-38.20002</proc:Xcoordinate>
+      <proc:Ycoordinate>224.59998</proc:Ycoordinate>
+    </proc:diagramLocation>
+    <proc:task>
+      <com:entity>CollectCoSData</com:entity>
+      <com:entityType>manualTask</com:entityType>
+      <com:relationship>taskRef</com:relationship>
+    </proc:task>
+  </proc:activity>
+  <proc:activity xsi:type="proc:taskRef" id="Task7" name="CommitCoSDetailstoInventory">
+    <proc:processHistorySummary>true</proc:processHistorySummary>
+    <proc:diagramLocation>
+      <proc:Xcoordinate>8.599991</proc:Xcoordinate>
+      <proc:Ycoordinate>455.2</proc:Ycoordinate>
+    </proc:diagramLocation>
+    <proc:task>
+      <com:entity>CommitCoSDetailstoInventory</com:entity>
+      <com:entityType>manualTask</com:entityType>
+      <com:relationship>taskRef</com:relationship>
+    </proc:task>
+  </proc:activity>
+  <proc:activity xsi:type="proc:taskRef" id="Task8" name="CoSDataSummary">
+    <proc:processHistorySummary>true</proc:processHistorySummary>
+    <proc:diagramLocation>
+      <proc:Xcoordinate>295.8</proc:Xcoordinate>
+      <proc:Ycoordinate>430.2</proc:Ycoordinate>
+    </proc:diagramLocation>
+    <proc:task>
+      <com:entity>CoSDataSummary</com:entity>
+      <com:entityType>manualTask</com:entityType>
+      <com:relationship>taskRef</com:relationship>
+    </proc:task>
+  </proc:activity>
+  <proc:activity xsi:type="proc:ruleTaskType" id="Gateway9" name="CommitDetails">
+    <proc:processHistorySummary>true</proc:processHistorySummary>
+    <proc:diagramLocation>
+      <proc:Xcoordinate>119.000046</proc:Xcoordinate>
+      <proc:Ycoordinate>340.6</proc:Ycoordinate>
+    </proc:diagramLocation>
+    <proc:ruleRef>
+      <com:entity>M4P3_JIGOrder</com:entity>
+      <com:entityType>order</com:entityType>
+      <com:relationship>com.mslv.studio.provisioning.order.ruleTask.rule</com:relationship>
+      <com:element>CommitDetailsRule</com:element>
+      <com:elementType>com.mslv.studio.provisioning.order.rule</com:elementType>
+    </proc:ruleRef>
+  </proc:activity>
+  <proc:activity xsi:type="proc:joinType" id="Join18" name="Join">
+    <proc:inputType>ALL</proc:inputType>
+    <proc:processHistorySummary>true</proc:processHistorySummary>
+    <proc:diagramLocation>
+      <proc:Xcoordinate>274.00006</proc:Xcoordinate>
+      <proc:Ycoordinate>224.2</proc:Ycoordinate>
+    </proc:diagramLocation>
+  </proc:activity>
+  <proc:activity xsi:type="proc:joinType" id="Join22" name="Join">
+    <proc:inputType>ANY</proc:inputType>
+    <proc:processHistorySummary>true</proc:processHistorySummary>
+    <proc:diagramLocation>
+      <proc:Xcoordinate>209.19998</proc:Xcoordinate>
+      <proc:Ycoordinate>549.5999</proc:Ycoordinate>
+    </proc:diagramLocation>
+  </proc:activity>
+  <proc:activity xsi:type="proc:endType" id="End26" name="End">
+    <proc:diagramLocation>
+      <proc:Xcoordinate>614.8</proc:Xcoordinate>
+      <proc:Ycoordinate>529.0</proc:Ycoordinate>
+    </proc:diagramLocation>
+  </proc:activity>
+  <proc:activity xsi:type="proc:taskRef" id="Task9" name="Set_Order_Defaults">
+    <proc:processHistorySummary>true</proc:processHistorySummary>
+    <proc:diagramLocation>
+      <proc:Xcoordinate>186.00003</proc:Xcoordinate>
+      <proc:Ycoordinate>-10.800001</proc:Ycoordinate>
+    </proc:diagramLocation>
+    <proc:task>
+      <com:entity>Set_Order_Defaults</com:entity>
+      <com:entityType>automationTask</com:entityType>
+      <com:relationship>taskRef</com:relationship>
+    </proc:task>
+  </proc:activity>
+  <proc:transition id="Flow10" name="">
+    <proc:from>Start1</proc:from>
+    <proc:to>Task9</proc:to>
+    <proc:status></proc:status>
+    <proc:mandatoryCheck>true</proc:mandatoryCheck>
+  </proc:transition>
+  <proc:transition id="Flow11" name="next">
+    <proc:from>Task1</proc:from>
+    <proc:to>Task2</proc:to>
+    <proc:status>next</proc:status>
+    <proc:mandatoryCheck>true</proc:mandatoryCheck>
+  </proc:transition>
+  <proc:transition id="Flow12" name="next">
+    <proc:from>Task3</proc:from>
+    <proc:to>Task4</proc:to>
+    <proc:status>next</proc:status>
+    <proc:mandatoryCheck>true</proc:mandatoryCheck>
+  </proc:transition>
+  <proc:transition id="Flow14" name="ActivationSuccessful">
+    <proc:from>Task4</proc:from>
+    <proc:to>Task5</proc:to>
+    <proc:status>ActivationSuccessful</proc:status>
+    <proc:mandatoryCheck>true</proc:mandatoryCheck>
+  </proc:transition>
+  <proc:transition id="Flow15" name="next">
+    <proc:from>Task1</proc:from>
+    <proc:to>Task6</proc:to>
+    <proc:status>next</proc:status>
+    <proc:mandatoryCheck>true</proc:mandatoryCheck>
+  </proc:transition>
+  <proc:transition id="Flow16" name="next">
+    <proc:from>Task6</proc:from>
+    <proc:to>Gateway9</proc:to>
+    <proc:status>next</proc:status>
+    <proc:mandatoryCheck>true</proc:mandatoryCheck>
+  </proc:transition>
+  <proc:transition id="Flow17" name="true">
+    <proc:from>Gateway9</proc:from>
+    <proc:to>Task7</proc:to>
+    <proc:status>true</proc:status>
+    <proc:mandatoryCheck>true</proc:mandatoryCheck>
+  </proc:transition>
+  <proc:transition id="Flow19" name="next">
+    <proc:from>Task2</proc:from>
+    <proc:to>Join18</proc:to>
+    <proc:status>next</proc:status>
+    <proc:mandatoryCheck>true</proc:mandatoryCheck>
+  </proc:transition>
+  <proc:transition id="Flow20" name="next">
+    <proc:from>Task8</proc:from>
+    <proc:to>Join18</proc:to>
+    <proc:status>next</proc:status>
+    <proc:mandatoryCheck>true</proc:mandatoryCheck>
+  </proc:transition>
+  <proc:transition id="Flow21" name="">
+    <proc:from>Join18</proc:from>
+    <proc:to>Task3</proc:to>
+    <proc:status></proc:status>
+    <proc:mandatoryCheck>true</proc:mandatoryCheck>
+  </proc:transition>
+  <proc:transition id="Flow23" name="CoScommitted">
+    <proc:from>Task7</proc:from>
+    <proc:to>Join22</proc:to>
+    <proc:status>CoScommitted</proc:status>
+    <proc:mandatoryCheck>true</proc:mandatoryCheck>
+  </proc:transition>
+  <proc:transition id="Flow24" name="false">
+    <proc:from>Gateway9</proc:from>
+    <proc:to>Join22</proc:to>
+    <proc:status>false</proc:status>
+    <proc:mandatoryCheck>true</proc:mandatoryCheck>
+  </proc:transition>
+  <proc:transition id="Flow25" name="">
+    <proc:from>Join22</proc:from>
+    <proc:to>Task8</proc:to>
+    <proc:status></proc:status>
+    <proc:mandatoryCheck>true</proc:mandatoryCheck>
+  </proc:transition>
+  <proc:transition id="Flow27" name="finish">
+    <proc:from>Task5</proc:from>
+    <proc:to>End26</proc:to>
+    <proc:status>finish</proc:status>
+    <proc:mandatoryCheck>true</proc:mandatoryCheck>
+  </proc:transition>
+  <proc:transition id="Flow13" name="success">
+    <proc:from>Task9</proc:from>
+    <proc:to>Task1</proc:to>
+    <proc:status>success</proc:status>
+    <proc:mandatoryCheck>true</proc:mandatoryCheck>
+  </proc:transition>
+  <proc:transition id="Flow18" name="failure">
+    <proc:from>Task9</proc:from>
+    <proc:to>End26</proc:to>
+    <proc:status>failure</proc:status>
+    <proc:mandatoryCheck>true</proc:mandatoryCheck>
+  </proc:transition>
+</com:modelEntity>

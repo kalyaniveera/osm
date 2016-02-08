@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xs:schema xmlns:tns="http://xmlns.oracle.com/communications/sce/dictionary/M4P3_JIG/M4P3_JIG" xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://xmlns.oracle.com/communications/sce/dictionary/M4P3_JIG/M4P3_JIG">
+    <xs:simpleType name="CommitCoSData">
+    <xs:restriction base="xs:boolean"/>
+  </xs:simpleType>
+    <xs:complexType name="CustomerContact">
+    <xs:sequence>
+      <xs:element name="CustomerName">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="30"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="CustomerNumber">
+        <xs:simpleType>
+          <xs:restriction base="xs:int"/>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+    <xs:complexType name="VPNInfo">
+    <xs:sequence>
+      <xs:element name="VPNName">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="10"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+    <xs:complexType name="CEConfigData">
+    <xs:sequence>
+      <xs:element name="CEWANCard">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="25"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="PECERouting">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="25"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="CEManagementAddress">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="25"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="CEHostName">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="25"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+    <xs:complexType name="PEConfigData">
+    <xs:sequence>
+      <xs:element name="PEWANCard">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="25"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="SlotPort">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="25"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="PEPortAddress">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="25"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="PEHostName">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="25"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+    <xs:complexType name="CoSPolicy">
+    <xs:sequence>
+      <xs:element name="PolicyName">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="15"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="LineSpeed">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="10"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="Class1BandWidth">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="10"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="Class2BandWidth">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="10"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="Class3BandWidth">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="10"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+    <xs:complexType name="LANData">
+    <xs:sequence>
+      <xs:element name="EthernetInterface">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="15"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="LANAddress">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="15"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="LANMask">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="15"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+    <xs:simpleType name="BillingStartDate">
+    <xs:restriction base="xs:dateTime"/>
+  </xs:simpleType>
+    <xs:complexType name="order_dashboard">
+    <xs:sequence>
+      <xs:element maxOccurs="1" minOccurs="0" name="order_complete" type="xs:boolean"/>
+      <xs:element maxOccurs="1" minOccurs="0" name="order_status">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="30"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element maxOccurs="1" minOccurs="0" name="order_in_delay" type="xs:boolean"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

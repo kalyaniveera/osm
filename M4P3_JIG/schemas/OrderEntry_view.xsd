@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+           xmlns:OrderEntry="urn:com:metasolv:oms:xmlapi:1"
+	
+           targetNamespace="urn:com:metasolv:oms:xmlapi:1"> 
+  
+    <xs:complexType name="OrderEntry">
+        <xs:sequence>
+        <xs:element name="CustomerContact">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="CustomerName" type="xs:string"/>
+            <xs:element name="CustomerNumber" type="xs:int"/>
+          </xs:sequence>
+        </xs:complexType>
+        </xs:element>
+
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>

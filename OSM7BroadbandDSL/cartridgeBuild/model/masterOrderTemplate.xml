@@ -1,0 +1,87 @@
+
+<masterOrderTemplate 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns="http://www.metasolv.com/OMS/OrderModel/2002/06/25">
+        <dataNode element="DslOrder"  ><dataNode element="orderId"   />
+<dataNode element="AsdlServiceDetails"  ><dataNode element="port"   />
+<dataNode element="bandwidth"   />
+ </dataNode>
+<dataNode element="SubscriberInfo"  ><dataNode element="Address"  ><dataNode element="City"   />
+<dataNode element="PostalCode"   />
+<dataNode element="Street"   />
+ </dataNode>
+<dataNode element="PhoneNumber"   />
+<dataNode element="Name"   />
+ </dataNode>
+
+        </dataNode>
+        <dataNode element="order"  ><dataNode element="customerAccount"  ><dataNode element="numAccount"   />
+<dataNode element="status"   />
+<dataNode element="corporate"   />
+<dataNode element="cpfClient"   />
+<dataNode element="cnpjClient"   />
+<dataNode element="inscrState"   />
+<dataNode element="clientSince"   />
+<dataNode element="segmentMarkets"  ><dataNode element="segmentMarket"   />
+ </dataNode>
+<dataNode element="category"   />
+<dataNode element="invoiceProfile"  ><dataNode element="mediaType"   />
+<dataNode element="typeInvoice"   />
+<dataNode element="billingCycle"   />
+<dataNode element="exemptionICMS"   />
+<dataNode element="empresaFaturamento"   />
+<dataNode element="paymentMethod"   />
+ </dataNode>
+<dataNode element="customerAddress"  ><dataNode element="locationType"   />
+<dataNode element="nameLocation"   />
+<dataNode element="number"   />
+<dataNode element="typeCompl"   />
+<dataNode element="numCompl"   />
+<dataNode element="district"   />
+<dataNode element="codeLocation"   />
+<dataNode element="city"   />
+<dataNode element="state"   />
+<dataNode element="referencePoint"   />
+<dataNode element="areaCode"   />
+<dataNode element="typeAddress"   />
+ </dataNode>
+ </dataNode>
+<dataNode element="numSalesOrder"   />
+<dataNode element="typeOrder"   />
+<dataNode element="salesOrderLineGroup"  ><dataNode element="salesOrderLine"  ><dataNode element="lineId"   />
+<dataNode element="parentLineReference"  ><dataNode element="parentLineId"   />
+<dataNode element="hierarchyName"   />
+ </dataNode>
+<dataNode element="rootParentLineId"   />
+<dataNode element="promotionalSalesOrderLineReference"   />
+<dataNode element="serviceId"   />
+<dataNode element="requestedDeliveryDate"   />
+<dataNode element="serviceActionCode"   />
+<dataNode element="serviceAddress"  ><dataNode element="locationType"   />
+<dataNode element="nameLocation"   />
+<dataNode element="number"   />
+<dataNode element="typeCompl"   />
+<dataNode element="numCompl"   />
+<dataNode element="district"   />
+<dataNode element="codeLocation"   />
+<dataNode element="city"   />
+<dataNode element="state"   />
+<dataNode element="referencePoint"   />
+<dataNode element="areaCode"   />
+<dataNode element="typeAddress"   />
+ </dataNode>
+<dataNode element="itemReference"  ><dataNode element="name"   />
+<dataNode element="typeCode"   />
+<dataNode element="primaryClassificationCode"   />
+<dataNode element="specificationGroup"  ><dataNode element="specification"  ><dataNode element="serviceActioncode"   />
+<dataNode element="name"   />
+<dataNode element="dataTypeCode"   />
+<dataNode element="value"   />
+ </dataNode>
+ </dataNode>
+ </dataNode>
+ </dataNode>
+ </dataNode>
+
+        </dataNode>
+</masterOrderTemplate>

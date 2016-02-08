@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+           xmlns:CommitCoSDetailstoInventory="urn:com:metasolv:oms:xmlapi:1"
+	
+           targetNamespace="urn:com:metasolv:oms:xmlapi:1"> 
+  
+    <xs:complexType name="CommitCoSDetailstoInventory">
+        <xs:sequence>
+        <xs:element name="CoSPolicy">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="PolicyName" type="xs:string"/>
+            <xs:element name="LineSpeed" type="xs:string"/>
+            <xs:element name="Class1BandWidth" type="xs:string"/>
+            <xs:element name="Class2BandWidth" type="xs:string"/>
+            <xs:element name="Class3BandWidth" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+        </xs:element>
+
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>

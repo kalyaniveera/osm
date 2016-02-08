@@ -1,0 +1,26 @@
+<view name="AssignDSLPort" xsi:schemaLocation="http://www.metasolv.com/OMS/OrderModel/2002/06/25" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.metasolv.com/OMS/OrderModel/2002/06/25">
+   <description>AssignDSLPort</description>
+   <stylesheet/>
+   <printStylesheet/>
+	<viewNode element="DslOrder">
+	<editable>true</editable>  <minOccurs>0</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+	<viewNode element="AsdlServiceDetails">
+	<editable>true</editable>  <minOccurs>0</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+	<viewNode element="port">
+	<editable>true</editable>  <minOccurs>1</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+
+</viewNode>
+
+
+</viewNode>
+
+
+</view>

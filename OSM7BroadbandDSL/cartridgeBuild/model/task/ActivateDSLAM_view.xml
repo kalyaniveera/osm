@@ -1,0 +1,83 @@
+
+<view name="ActivateDSLAM" xsi:schemaLocation="http://www.metasolv.com/OMS/OrderModel/2002/06/25" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.metasolv.com/OMS/OrderModel/2002/06/25">
+   <description>ActivateDSLAM</description>
+   <stylesheet/>
+   <printStylesheet/>
+	<viewNode element="DslOrder">
+	<editable>true</editable>  <minOccurs>0</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+	<viewNode element="orderId">
+	<editable>true</editable>  <minOccurs>1</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+<viewNode element="AsdlServiceDetails">
+	<editable>true</editable>  <minOccurs>0</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+	<viewNode element="port">
+	<editable>true</editable>  <minOccurs>1</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+<viewNode element="bandwidth">
+	<editable>true</editable>  <minOccurs>1</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+
+</viewNode>
+
+<viewNode element="SubscriberInfo">
+	<editable>true</editable>  <minOccurs>0</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+	<viewNode element="Address">
+	<editable>true</editable>  <minOccurs>0</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+	<viewNode element="City">
+	<editable>true</editable>  <minOccurs>0</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+<viewNode element="PostalCode">
+	<editable>true</editable>  <minOccurs>0</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+<viewNode element="Street">
+	<editable>true</editable>  <minOccurs>0</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+
+</viewNode>
+
+<viewNode element="PhoneNumber">
+	<editable>true</editable>  <minOccurs>0</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+<viewNode element="Name">
+	<editable>true</editable>  <minOccurs>0</minOccurs>
+    <maxOccurs>1</maxOccurs>
+	
+</viewNode>
+
+
+</viewNode>
+
+
+</viewNode>
+
+
+</view>

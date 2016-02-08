@@ -1,0 +1,119 @@
+<cartridge namespace="OSM7BroadbandDSL" version="1.0.0" 
+    xsi:schemaLocation="http://www.metasolv.com/OMS/OrderModel/2002/06/25" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:xi="http://www.w3.org/2001/XInclude" 
+    xmlns="http://www.metasolv.com/OMS/OrderModel/2002/06/25"    >	
+		<description>OSM7BroadbandDSL</description>
+		<default>true</default>
+		<timestamp>2007-02-01T21:31:09</timestamp>
+		<state name="accepted">
+		   	<description>Accepted</description>
+		</state>
+		<state name="received">
+		   	<description>Received</description>
+		</state>
+		<state name="assigned">
+		   	<description>Assigned</description>
+		</state>
+		<state name="completed">
+		   	<description>Completed</description>
+		</state> 
+ 		<status name="next">
+		   	<description>next</description>
+		   	<allowableConstraintViolationSeverity>WARNING</allowableConstraintViolationSeverity>
+		</status>
+ 		<status name="cancel">
+		   	<description>cancel</description>
+		   	<allowableConstraintViolationSeverity>WARNING</allowableConstraintViolationSeverity>
+		</status>
+ 		<status name="success">
+		   	<description>Success</description>
+		   	<allowableConstraintViolationSeverity>CRITICAL</allowableConstraintViolationSeverity>
+		</status>
+ 		<status name="all_subprocess_threads_complete">
+		   	<description>N/A</description>
+		   	<allowableConstraintViolationSeverity>CRITICAL</allowableConstraintViolationSeverity>
+		</status>
+ 		<status name="back">
+		   	<description>back</description>
+		   	<allowableConstraintViolationSeverity>WARNING</allowableConstraintViolationSeverity>
+		</status>
+ 		<status name="finish">
+		   	<description>finish</description>
+		   	<allowableConstraintViolationSeverity>WARNING</allowableConstraintViolationSeverity>
+		</status>
+ 		<status name="completed">
+		   	<description>Completed</description>
+		   	<allowableConstraintViolationSeverity>CRITICAL</allowableConstraintViolationSeverity>
+		</status>
+ 		<status name="port_unavailable">
+		   	<description>Port Unavailable</description>
+		   	<allowableConstraintViolationSeverity>CRITICAL</allowableConstraintViolationSeverity>
+		</status>
+ 		<status name="port_available">
+		   	<description>Port Available</description>
+		   	<allowableConstraintViolationSeverity>CRITICAL</allowableConstraintViolationSeverity>
+		</status>
+ 		<xi:include href="task/VerifyOrder.xml"/>
+ 		<xi:include href="task/VerifyOrder_view.xml"/>
+ 		<xi:include href="task/ShipDSLModem.xml"/>
+ 		<xi:include href="task/ShipDSLModem_view.xml"/>
+ 		<xi:include href="task/AddExtraCapacity.xml"/>
+ 		<xi:include href="task/AddExtraCapacity_view.xml"/>
+ 		<xi:include href="task/VerifyDSLService.xml"/>
+ 		<xi:include href="task/VerifyDSLService_view.xml"/>
+ 		<xi:include href="task/ActivateDSLAM.xml"/>
+ 		<xi:include href="task/ActivateDSLAM_view.xml"/>
+ 		<xi:include href="task/AssignDSLPort.xml"/>
+ 		<xi:include href="task/AssignDSLPort_view.xml"/>
+ 		<xi:include href="task/BroadbandDSLOrderCreation.xml"/>
+ 		<xi:include href="task/BroadbandDSLOrderCreation_view.xml"/>	
+		<task name="start1" xsi:type="ruleTaskType">
+			<description>start1</description>
+			<state>completed</state>
+			<state>received</state>
+			<status>true</status>
+	   		<condition>null_rule</condition>
+			<compensationStrategy>
+				<onTaskReevaluate>redo</onTaskReevaluate>
+			</compensationStrategy>
+		</task>
+		<task name="join_task" xsi:type="ruleTaskType">
+			<description>WaitForPortAndModem</description>
+			<state>completed</state>
+			<state>received</state>
+			<status>true</status>
+			<condition>null_rule</condition>
+			<compensationStrategy>
+				<onTaskReevaluate>redo</onTaskReevaluate>
+			</compensationStrategy>
+		</task>
+ 	 	<xi:include href="process/AddDSLProcess.xml"/>
+ 	 	
+		<xi:include href="dataDictionary.xml"/>
+		<xi:include href="masterOrderTemplate.xml"/>
+ 		<xi:include href="orderLifecyclePolicy/defaultBroadbandDemoOLP.xml"/>
+ 		<xi:include href="order/OSM7BroadbandDSLOrder.xml"/>
+ 		<xi:include href="order/OSM7BroadbandDSLOrder_orderType.xml"/>
+	 	<xi:include href="order/OSM7BroadbandDSLOrder_orderSource.xml"/>
+		<workgroup name="broadbandDemo">
+	   		
+	 	
+				<permissions>
+			
+ 				<orderEntry>
+        			<orderType>OSM7BroadbandDSLOrder</orderType>
+		     	   <orderSource>OSM7BroadbandDSLOrder</orderSource>
+				</orderEntry>
+      			<task>VerifyOrder</task>
+      			<task>ShipDSLModem</task>
+      			<task>AddExtraCapacity</task>
+      			<task>VerifyDSLService</task>
+      			<task>ActivateDSLAM</task>
+      			<task>AssignDSLPort</task>
+      			<task>BroadbandDSLOrderCreation</task>
+   			</permissions>
+		</workgroup>
+</cartridge>
+
+

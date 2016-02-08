@@ -1,0 +1,445 @@
+	
+	
+<orderStatePolicy name="defaultBroadbandDemoOLP"  xsi:schemaLocation="http://www.metasolv.com/OMS/OrderModel/2002/06/25" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.metasolv.com/OMS/OrderModel/2002/06/25">	
+	<description>defaultBroadbandDemoOLP</description>
+		<abortedOrderState>
+			<deleteOrderTransaction>
+				<condition>true()</condition>
+				<permission>
+					<condition>true()</condition>
+					<workgroup>broadbandDemo</workgroup>
+				</permission>
+
+			</deleteOrderTransaction>
+			<updateOrderTransaction>			
+				<condition>true()</condition>
+				<permission>
+					<condition>true()</condition>
+					<workgroup>broadbandDemo</workgroup>
+				</permission>
+
+			</updateOrderTransaction>
+		</abortedOrderState>
+		<amendingOrderState>
+			<abortOrderTransaction>
+				<condition>true()</condition>
+				<permission>
+					<condition>true()</condition>
+					<workgroup>broadbandDemo</workgroup>
+				</permission>
+
+			</abortOrderTransaction>				
+			<submitAmendmentOrderTransaction>
+				<condition>true()</condition>
+				<permission>
+					<condition>true()</condition>
+					<workgroup>broadbandDemo</workgroup>
+				</permission>
+
+			</submitAmendmentOrderTransaction>				
+			<suspendOrderTransaction>
+				<condition>true()</condition>
+				<permission>
+					<condition>true()</condition>
+					<workgroup>broadbandDemo</workgroup>
+				</permission>
+				<waitFor>
+					<noTasksInProgressCondition/>
+					<conditionNotSatisfiedEventInterval>P0DT1H0M0.000S</conditionNotSatisfiedEventInterval>
+				</waitFor>
+
+			</suspendOrderTransaction>
+		</amendingOrderState>
+		<cancelledOrderState>
+			<abortOrderTransaction>
+				<condition>true()</condition>
+				<permission>
+					<condition>true()</condition>
+					<workgroup>broadbandDemo</workgroup>
+				</permission>
+
+			</abortOrderTransaction>
+			<deleteOrderTransaction>
+				<condition>true()</condition>
+				<permission>
+					<condition>true()</condition>
+					<workgroup>broadbandDemo</workgroup>
+				</permission>
+
+			</deleteOrderTransaction>
+			<resumeOrderTransaction>
+				<condition>true()</condition>
+				<permission>
+					<condition>true()</condition>
+					<workgroup>broadbandDemo</workgroup>
+				</permission>
+
+			</resumeOrderTransaction>	
+			<updateOrderTransaction>			
+				<condition>true()</condition>
+				<permission>
+					<condition>true()</condition>
+					<workgroup>broadbandDemo</workgroup>
+				</permission>
+
+			</updateOrderTransaction>
+		</cancelledOrderState>
+		<cancellingOrderState>
+			<abortOrderTransaction>
+				<condition>true()</condition>
+				<permission>
+					<condition>true()</condition>
+					<workgroup>broadbandDemo</workgroup>
+				</permission>
+
+			</abortOrderTransaction>
+			<suspendOrderTransaction>
+				<condition>true()</condition>
+				<permission>
+					<condition>true()</condition>
+					<workgroup>broadbandDemo</workgroup>
+				</permission>
+				<waitFor>
+					<noTasksInProgressCondition/>
+					<conditionNotSatisfiedEventInterval>P0DT1H0M0.000S</conditionNotSatisfiedEventInterval>
+				</waitFor>
+
+			</suspendOrderTransaction>			
+		</cancellingOrderState>
+		<completedOrderState>
+			<deleteOrderTransaction>
+				<condition>true()</condition>
+				<permission>
+					<condition>true()</condition>
+					<workgroup>broadbandDemo</workgroup>
+				</permission>
+
+			</deleteOrderTransaction>
+			<updateOrderTransaction>
+				<condition>true()</condition>
+				<permission>
+					<condition>true()</condition>
+					<workgroup>broadbandDemo</workgroup>
+				</permission>
+				<permission>
+					<condition>true()</condition>
+					<workgroup>broadbandDemo</workgroup>
+				</permission>
+
+			</updateOrderTransaction>
+		</completedOrderState>
+		<failedOrderState>
+			<abortOrderTransaction>
+				<condition>true()</condition>
+				<permission>
+					<condition>true()</condition>
+					<workgroup>broadbandDemo</workgroup>
+				</permission>
+
+			</abortOrderTransaction>
+			<cancelOrderTransaction>
+				<condition>true()</condition>
+				<permission>
+					<condition>true()</condition>
+					<workgroup>broadbandDemo</workgroup>
+				</permission>
+				<waitFor>
+					<noTasksInProgressCondition/>
+					<conditionNotSatisfiedEventInterval>P0DT1H0M0.000S</conditionNotSatisfiedEventInterval>
+				</waitFor>
+
+			</cancelOrderTransaction>								
+			<manageOrderFalloutTransaction>
+				<condition>true()</condition>
+				<permission>
+					<condition>true()</condition>
+					<workgroup>broadbandDemo</workgroup>
+				</permission>
+
+			</manageOrderFalloutTransaction>								
+			<submitAmendmentOrderTransaction>
+				<condition>true()</condition>
+				<permission>
+					<condition>true()</condition>
+					<workgroup>broadbandDemo</workgroup>
+				</permission>
+
+			</submitAmendmentOrderTransaction>				
+			<updateOrderTransaction>
+				<condition>true()</condition>
+				<permission>
+					<condition>true()</condition>
+					<workgroup>broadbandDemo</workgroup>
+				</permission>
+
+			</updateOrderTransaction>				
+		</failedOrderState>
+		<inProgressState>
+			<abortOrderTransaction>
+				<condition>true()</condition>
+				<permission>
+					<condition>true()</condition>
+					<workgroup>broadbandDemo</workgroup>
+				</permission>
+
+			</abortOrderTransaction>
+			<cancelOrderTransaction>
+				<condition>true()</condition>
+				<permission>
+					<condition>true()</condition>
+					<workgroup>broadbandDemo</workgroup>
+				</permission>
+				<waitFor>
+					<noTasksInProgressCondition/>
+					<conditionNotSatisfiedEventInterval>P0DT1H0M0.000S</conditionNotSatisfiedEventInterval>
+				</waitFor>
+
+			</cancelOrderTransaction>								
+			<failOrderTransaction>
+				<condition>true()</condition>
+				<permission>
+					<condition>true()</condition>
+					<workgroup>broadbandDemo</workgroup>
+				</permission>
+				<waitFor>
+					<noTasksInProgressCondition/>
+					<conditionNotSatisfiedEventInterval>P0DT1H0M0.000S</conditionNotSatisfiedEventInterval>
+				</waitFor>
+
+			</failOrderTransaction>
+			<processAmendmentOrderTransaction>
+				<condition>true()</condition>
+				<permission>
+					<condition>true()</condition>
+					<workgroup>broadbandDemo</workgroup>
+				</permission>
+				<waitFor>
+					<noTasksInProgressCondition/>
+					<conditionNotSatisfiedEventInterval>P0DT1H0M0.000S</conditionNotSatisfiedEventInterval>
+				</waitFor>
+
+			</processAmendmentOrderTransaction>								
+			<raiseExceptionTransaction>
+				<condition>true()</condition>
+				<permission>
+					<condition>true()</condition>
+					<workgroup>broadbandDemo</workgroup>
+				</permission>
+				<permission>
+					<condition>true()</condition>
+					<workgroup>broadbandDemo</workgroup>
+				</permission>
+				<waitFor>
+					<noTasksInProgressCondition/>
+					<conditionNotSatisfiedEventInterval>P0DT1H0M0.000S</conditionNotSatisfiedEventInterval>
+				</waitFor>
+
+			</raiseExceptionTransaction>				
+			<submitAmendmentOrderTransaction>
+				<condition>true()</condition>
+				<permission>
+					<condition>true()</condition>
+					<workgroup>broadbandDemo</workgroup>
+				</permission>
+
+			</submitAmendmentOrderTransaction>				
+			<suspendOrderTransaction>
+				<condition>true()</condition>
+				<permission>
+					<condition>true()</condition>
+					<workgroup>broadbandDemo</workgroup>
+				</permission>
+				<waitFor>
+					<noTasksInProgressCondition/>
+					<conditionNotSatisfiedEventInterval>P0DT1H0M0.000S</conditionNotSatisfiedEventInterval>
+				</waitFor>
+
+			</suspendOrderTransaction>
+			<updateOrderTransaction>
+				<condition>true()</condition>
+				<permission>
+					<condition>true()</condition>
+					<workgroup>broadbandDemo</workgroup>
+				</permission>
+				<permission>
+					<condition>true()</condition>
+					<workgroup>broadbandDemo</workgroup>
+				</permission>
+
+			</updateOrderTransaction>				
+		</inProgressState>	
+		<notStartedOrderState>
+			<abortOrderTransaction>
+				<condition>true()</condition>
+				<permission>
+					<condition>true()</condition>
+					<workgroup>broadbandDemo</workgroup>
+				</permission>
+
+			</abortOrderTransaction>
+			<deleteOrderTransaction>
+				<condition>true()</condition>
+				<permission>
+					<condition>true()</condition>
+					<workgroup>broadbandDemo</workgroup>
+				</permission>
+				<permission>
+					<condition>true()</condition>
+					<workgroup>broadbandDemo</workgroup>
+				</permission>
+
+			</deleteOrderTransaction>	
+			<failOrderTransaction>
+				<condition>true()</condition>
+				<permission>
+					<condition>true()</condition>
+					<workgroup>broadbandDemo</workgroup>
+				</permission>
+				<waitFor>
+					<noTasksInProgressCondition/>
+					<conditionNotSatisfiedEventInterval>P0DT1H0M0.000S</conditionNotSatisfiedEventInterval>
+				</waitFor>
+
+			</failOrderTransaction>
+			<suspendOrderTransaction>
+				<condition>true()</condition>
+				<permission>
+					<condition>true()</condition>
+					<workgroup>broadbandDemo</workgroup>
+				</permission>
+				<waitFor>
+					<noTasksInProgressCondition/>
+					<conditionNotSatisfiedEventInterval>P0DT1H0M0.000S</conditionNotSatisfiedEventInterval>
+				</waitFor>
+
+			</suspendOrderTransaction>	
+			<updateOrderTransaction>
+				<condition>true()</condition>
+				<permission>
+					<condition>true()</condition>
+					<workgroup>broadbandDemo</workgroup>
+				</permission>
+				<permission>
+					<condition>true()</condition>
+					<workgroup>broadbandDemo</workgroup>
+				</permission>
+
+			</updateOrderTransaction>	
+		</notStartedOrderState>
+		<suspendedOrderState>
+			<abortOrderTransaction>
+				<condition>true()</condition>
+				<permission>
+					<condition>true()</condition>
+					<workgroup>broadbandDemo</workgroup>
+				</permission>
+
+			</abortOrderTransaction>
+			<cancelOrderTransaction>
+				<condition>true()</condition>
+				<permission>
+					<condition>true()</condition>
+					<workgroup>broadbandDemo</workgroup>
+				</permission>
+				<waitFor>
+					<noTasksInProgressCondition/>
+					<conditionNotSatisfiedEventInterval>P0DT1H0M0.000S</conditionNotSatisfiedEventInterval>
+				</waitFor>
+
+			</cancelOrderTransaction>
+			<failOrderTransaction>
+				<condition>true()</condition>
+				<permission>
+					<condition>true()</condition>
+					<workgroup>broadbandDemo</workgroup>
+				</permission>
+				<waitFor>
+					<noTasksInProgressCondition/>
+					<conditionNotSatisfiedEventInterval>P0DT1H0M0.000S</conditionNotSatisfiedEventInterval>
+				</waitFor>
+
+			</failOrderTransaction>
+			<resumeOrderTransaction>
+				<condition>true()</condition>
+				<permission>
+					<condition>true()</condition>
+					<workgroup>broadbandDemo</workgroup>
+				</permission>
+
+			</resumeOrderTransaction>	
+			<submitAmendmentOrderTransaction>
+				<condition>true()</condition>
+				<permission>
+					<condition>true()</condition>
+					<workgroup>broadbandDemo</workgroup>
+				</permission>
+
+			</submitAmendmentOrderTransaction>
+			<updateOrderTransaction>
+				<condition>true()</condition>
+				<permission>
+					<condition>true()</condition>
+					<workgroup>broadbandDemo</workgroup>
+				</permission>
+
+			</updateOrderTransaction>
+		</suspendedOrderState>
+		<waitingForRevisionOrderState>
+			<abortOrderTransaction>
+				<condition>true()</condition>
+				<permission>
+					<condition>true()</condition>
+					<workgroup>broadbandDemo</workgroup>
+				</permission>
+
+			</abortOrderTransaction>
+			<cancelOrderTransaction>
+				<condition>true()</condition>
+				<permission>
+					<condition>true()</condition>
+					<workgroup>broadbandDemo</workgroup>
+				</permission>
+				<waitFor>
+					<noTasksInProgressCondition/>
+					<conditionNotSatisfiedEventInterval>P0DT1H0M0.000S</conditionNotSatisfiedEventInterval>
+				</waitFor>
+
+			</cancelOrderTransaction>
+			<failOrderTransaction>
+				<condition>true()</condition>
+				<permission>
+					<condition>true()</condition>
+					<workgroup>broadbandDemo</workgroup>
+				</permission>
+				<waitFor>
+					<noTasksInProgressCondition/>
+					<conditionNotSatisfiedEventInterval>P0DT1H0M0.000S</conditionNotSatisfiedEventInterval>
+				</waitFor>
+
+			</failOrderTransaction>
+			<resumeOrderTransaction>
+				<condition>true()</condition>
+				<permission>
+					<condition>true()</condition>
+					<workgroup>broadbandDemo</workgroup>
+				</permission>
+
+			</resumeOrderTransaction>	
+			<submitAmendmentOrderTransaction>
+				<condition>true()</condition>
+				<permission>
+					<condition>true()</condition>
+					<workgroup>broadbandDemo</workgroup>
+				</permission>
+
+			</submitAmendmentOrderTransaction>
+			<updateOrderTransaction>
+				<condition>true()</condition>
+				<permission>
+					<condition>true()</condition>
+					<workgroup>broadbandDemo</workgroup>
+				</permission>
+
+			</updateOrderTransaction>
+		</waitingForRevisionOrderState>
+</orderStatePolicy>
